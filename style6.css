@@ -1,0 +1,249 @@
+
+*{
+    padding: 5px;
+}
+/*done index*/
+
+header div {
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    color: gray;
+    text-align: center;
+    }
+
+header {
+    grid-area: header;
+    text-align: center;
+
+}
+
+
+ul li {
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #5a646b;
+    text-decoration: none;
+    background-color: #dbdee0;
+    border-radius: 10px;
+    color: white
+  }
+
+section #Imagen1 {
+    grid-area: Imagen;
+}
+
+section #principios1 {
+    grid-area: servicios;
+}
+
+#panel1 {
+    grid-area: panel1;
+}
+
+aside {
+    grid-area: cotizacion;
+}
+
+
+
+#grilla1 {
+    display: grid;
+    grid-template-columns: 350px 1000px 350px;
+    grid-template-rows: 100px 300px 300px 50px;
+    column-gap: 15px;
+    row-gap: 100px;
+    grid-template-areas: "panel1 header cotizacion" "panel1 Imagen1 cotizacion" "panel1 principios1 cotizacion" "footer footer footer";
+}
+
+#Imagen1,
+#principios1 {
+    display: grid;
+    grid-template-columns: 500px auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    
+}
+#Imagen1 {
+    height: 300px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+#principios1 {
+    height: auto;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+h2{
+    color: rgb(193, 160, 30);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+
+    #grilla1 {
+        display: grid;
+        grid-template-columns: 350px 1000px 350px;
+        grid-template-rows: 100px 300px 300px 50px;
+        column-gap: 15px;
+        row-gap: 100px;
+        grid-template-areas: "panel1 header cotizacion" "panel1 Imagen1 cotizacion" "panel1 principios1 cotizacion" "footer footer footer";
+    }
+    #Imagen1,
+    #principios1 {
+        display: grid;
+        grid-template-columns: 500px auto;
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+        row-gap: 10px;   
+    }
+    #Imagen1 {
+        height: 300px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    #principios1 {
+        height: auto;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+}
+
+@media screen and (min-width: 320px) {
+
+    #grilla1 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 300px 300px 50px;
+        column-gap: 15px;
+        row-gap: 100px;
+        grid-template-areas: "panel1" "Imagen1" "principios1" "footer";
+    }
+    #Imagen1,
+    #principios1 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+        row-gap: 10px;   
+    }
+    #Imagen1 {
+        height: auto;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    #principios1 {
+        height: auto;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    aside {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+/*Fondo de Inversiones*/
+
+#grilla2 {
+    display: grid;
+    grid-template-columns: 350px 300px 300px 350px;
+    grid-template-rows: 100px 230px 230px 230px 50px;
+    column-gap: 15px;
+    row-gap: 10px;
+    grid-template-areas: "nav header header cotizacion" "FondoUruguay FondoUruguay FondoUruguay cotizacion" "Fondodolares Fondodolares Fondodolares cotizacion" "nav Preguntasfrecuentes Preguntasfrecuentes cotizacion" "footer footer footer footer";
+}
+
+header div {
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    color: gray;
+    text-align: center;
+    }
+
+header {
+    grid-area: header;
+    text-align: center;
+
+}
+
+section #FondoUruguay {
+    grid-area: FondoUruguay;
+}
+
+section #Fondodolares {
+    grid-area: Fondodolares;
+}
+
+section #Preguntasfrecuentes {
+    grid-area: Preguntasfrecuentes;
+}
+
+
+
+#FondoUruguay
+#Fondodolares {
+    display: grid;
+    height: 300px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+#Preguntasfrecuentes {
+    height: auto;
+    justify-items: auto;
+    align-items: auto;
+}
+
+
+/*Asesoria*/
+#grilla3 {
+    display: grid;
+    grid-template-columns: 350px 1000px 350px;
+    grid-template-rows: 100px 300px 300px 50px;
+    column-gap: 15px;
+    row-gap: 100px;
+    grid-template-areas: "nav header cotizacion" "nav aaaaa cotizacion" "panel bbbbb cotizacion" "footer footer footer";
+}
+
+
+
+
+
+
+
+/*done general*/
+footer {
+    grid-area: footer;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    padding-left: 700px;
+    background-color: grey;
+}
